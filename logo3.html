@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+    <!--<![endif]-->
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>LOGO</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+
+        <style>
+            .grid-container {
+                display: grid;
+                height: 100%;
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: 1fr 1fr;
+                grid-template-areas: "over company" "under company";
+            }
+
+            .over {
+                grid-area: over;
+                position: relative;
+                overflow: hidden;
+                margin: 0 auto;
+                width: 100px;
+                height: 300px;
+                border-radius: 50px/25px;
+                background-color: rgba(160, 160, 160, 0.5);
+                -ms-transform: rotate(70deg);
+                /* IE 9 */
+                -webkit-transform: rotate(70deg);
+                /* Safari */
+                transform: rotate(70deg);
+                /* Standard syntax */
+            }
+
+            .over:before {
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 100px;
+                height: 50px;
+                border-radius: 50px/25px;
+                background-color: rgba(160, 160, 160, 0.4);
+                content: '';
+            }
+
+            .under {
+                grid-area: under;
+                position: relative;
+                overflow: hidden;
+                margin: 0 auto;
+                width: 100px;
+                height: 300px;
+                border-radius: 50px/25px;
+                background-color: rgba(160, 160, 160, 0.5);
+                -ms-transform: rotate(70deg);
+                /* IE 9 */
+                -webkit-transform: rotate(70deg);
+                /* Safari */
+                transform: rotate(70deg);
+                /* Standard syntax */
+            }
+
+            .under:before {
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 100px;
+                height: 50px;
+                border-radius: 50px/25px;
+                background-color: rgba(160, 160, 160, 0.4);
+                content: '';
+            }
+
+            .company {
+                grid-area: company;
+                border-left-color: black;
+                border-left-style: solid;
+                font: "Courier New", Courier, monospace;
+                text-align: center;
+                font-size: 13px;
+                text-transform: uppercase;
+                letter-spacing: 0.2em;
+                color: #777;
+            }
+
+            .company hr {
+                width: 95%;
+                color: blue;
+            }
+        </style>
+    </head>
+
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <!-- LOGO -->
+        <div class="grid-container">
+            <div class="over">
+            </div>
+            <div class="under">
+            </div>
+            <div class="company"> Over | Under <hr> Technology
+            </div>
+        </div>
+        <script src="" async defer></script>
+    </body>
+
+</html>

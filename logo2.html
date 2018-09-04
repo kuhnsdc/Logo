@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+    <!--<![endif]-->
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>LOGO</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+
+        <style>
+            .grid-container {
+                display: grid;
+                height: 100%;
+                grid-template-columns: 30px 1fr;
+                grid-template-rows: 28px 28px;
+                grid-template-areas: "over company" "under company";
+            }
+
+            .over {
+                grid-area: over;
+                height: 25px;
+                width: 25px;
+                background-color: #bbb;
+                border-radius: 50%;
+                padding: 2px 2px 2px 2px;
+            }
+
+            .under {
+                grid-area: under;
+                height: 25px;
+                width: 25px;
+                background-color: #bbb;
+                border-radius: 50%;
+                padding: 2px 2px 2px 2px;
+            }
+
+            .company {
+                grid-area: company;
+                border-left-color: black;
+                border-left-style: solid;
+                font:"Courier New", Courier, monospace;
+                text-align: center;
+                font-size: 13px;
+                text-transform: uppercase;
+                letter-spacing: 0.2em;
+                color: #777;
+            }
+
+            .company hr {
+                width: 95%;
+                color: blue;
+            }
+        </style>
+    </head>
+
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <!-- LOGO -->
+        <div class="grid-container">
+            <div class="over">
+            </div>
+            <div class="under">
+            </div>
+            <div class="company"> Over | Under
+                <hr> Technology
+            </div>
+        </div>
+        <script src="" async defer></script>
+    </body>
+
+</html>
